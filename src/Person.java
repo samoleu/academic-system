@@ -3,7 +3,6 @@ public class Person {
     protected String personId;
 
     public String toString() {
-
-        return this.name + "(Person ID:" + this.personId + ")";
+        return this.name + "(CPF:" + this.personId + ")";
     }
 }

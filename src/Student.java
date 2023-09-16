@@ -3,6 +3,6 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return this.name + "(Person ID:" + this.registration + ")";
+        return this.name + "(Matrícula:" + this.registration + ")";
     }
 }
