@@ -4,6 +4,8 @@ public class StudentAssignment {
     private Date deliveryTime;
     private int runTime;
 
+    public double getGrade() { return grade;}
+
     public double totalGrade(Date deadline, int expectedTime, double maximumGrade) {
         if (deliveryTime.posterior(deadline)) {
             grade = maximumGrade * 0.8;
@@ -12,7 +14,7 @@ public class StudentAssignment {
                 grade += 2;
             }
         }
-        return maximumGrade;
+        return grade;
     }
 
 }
