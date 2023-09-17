@@ -3,7 +3,18 @@ public class Assessment {
     protected Date dateAplication;
     protected double maximumGrade;
 
+    public Assessment(String name, Date dateAplication, double maximumGrade) {
+        this.name = name;
+        this.dateAplication = dateAplication;
+        this.maximumGrade = maximumGrade;
+    }
+
     public double grade(int index) {
         return 0.0;
     }
+
+    public double grade(String registerStudent) {
+        return 0.0;
+    }
+
 }

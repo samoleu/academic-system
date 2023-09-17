@@ -8,17 +8,6 @@ public class Date {
         this.year = year;
     }
 
-    public int getDay() {
-        return day;
-    }
-
-    public int getMonth() {
-        return month;
-    }
-
-    public int getYear() {
-        return year;
-    }
 
     public boolean posterior(Date testedDate) {
         if (testedDate.year < this.year) {
