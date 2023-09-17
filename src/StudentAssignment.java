@@ -9,12 +9,14 @@ public class StudentAssignment {
     public double totalGrade(Date deadline, int expectedTime, double maximumGrade) {
         if (deliveryTime.posterior(deadline)) {
             grade = maximumGrade * 0.8;
+            return grade;
         } else {
             if (grade == maximumGrade && runTime <= expectedTime) {
                 grade += 2;
+                return grade;
             }
         }
-        return grade;
+        return maximumGrade;
     }
 
 }
