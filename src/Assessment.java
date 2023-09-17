@@ -1,9 +1,9 @@
 public class Assessment {
-    String name;
-    Date dateAplication;
-    double maximumGrade;
+    protected String name;
+    protected Date dateAplication;
+    protected double maximumGrade;
 
-    double grade() {
+    public double grade(int index) {
         return 0.0;
     }
 }

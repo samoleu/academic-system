@@ -5,13 +5,10 @@ public class StudentExam {
     public double totalGrade() {
         double totGrade;
         int i;
-
         totGrade = 0.0;
-
         for (i = 0 ; i <= grade.length; i++) {
             totGrade += grade[i];
         }
-
         return totGrade;
     }
 }

@@ -5,5 +5,4 @@ public class Exam extends Assessment{
     public double grade(int index) {
         return grades[index].totalGrade();
     }
-
 }

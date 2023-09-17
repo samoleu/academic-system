@@ -1,6 +1,6 @@
 public class Date {
 
-    int day, month, year;
+    private int day, month, year;
 
     public Date(int day, int month, int year) {
         this.day = day;
@@ -26,9 +26,7 @@ public class Date {
         } else if (testedDate.year == this.year) {
             if (testedDate.month < this.month) {
                 return true;
-            } else if (testedDate.month == this.month && testedDate.day < this.day) {
-                return true;
-            }
+            } else return testedDate.month == this.month && testedDate.day < this.day;
         }
 
         return false;
