@@ -12,11 +12,6 @@ public class Student extends Person{
     }
 
     @Override
-    public String getName() {
-        return super.getName();
-    }
-
-    @Override
     public String toString() {
         return this.name + "(Matrícula:" + this.registration + ")";
     }

@@ -12,15 +12,5 @@ public class Assignment extends Assessment{
         return grades[index].getGrade();
     }
 
-    public double grade(String registerStudent) {
-        for (StudentAssignment grade : grades) {
-            if (grade.getRegistration().equals(registerStudent)) {
-                return grade.getGrade();
-
-            }
-        }
-        System.out.println("Aluno não encontrado!");
-        return 0.0;
-    }
 
 }
