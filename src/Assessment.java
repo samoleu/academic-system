@@ -13,8 +13,4 @@ public class Assessment {
         return 0.0;
     }
 
-    public double grade(String registerStudent) {
-        return 0.0;
-    }
-
 }

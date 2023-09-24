@@ -15,10 +15,6 @@ public class StudentAssignment {
         return grade;
     }
 
-//    public String getRegistration() {
-//        return student.getRegistration();
-//    }
-
     public double totalGrade(Date deadline, int expectedTime, double maximumGrade) {
         if (deliveryTime.posterior(deadline)) {
             grade = grade * 0.8;

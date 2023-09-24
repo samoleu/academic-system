@@ -15,28 +15,16 @@ public class StudentClass {
         this.assessments = assessments;
     }
 
-    // sum grades of all assessments
-    private double sumGrade(double[] gradesStudent) {
-        double mean = 0.0;
-        for (double score : gradesStudent) {
-            mean += score;
-        }
-        if (mean <= 100) { return mean; }
-        else return 100;
-    }
-
     public void mean() {
         double meanClass = 0.0; // receive and save grades of a student
         System.out.println("Médias da Turma" + name + "(" + year + "/" + semester + "):");
 
         for(int indexStudent=0; indexStudent< students.length; indexStudent++) {
-
             System.out.print(students[indexStudent].toString() + ": ");
             double sumGradeStudent = 0.0;
 
             for(int indexAssessment=0; indexAssessment < assessments.length; indexAssessment++) {
                 double gradeStudent = assessments[indexAssessment].grade(indexStudent);
-
                 System.out.print(" " + gradeStudent);
                 sumGradeStudent += gradeStudent;
             }
@@ -49,31 +37,6 @@ public class StudentClass {
                 meanClass += 100;
             }
         }
-        System.out.printf("Média da turma: %.2f", meanClass/students.length);
+        System.out.printf("Média da turma: %.2f \n", meanClass/students.length);
     }
-
-
-
-
-
-    /*public void mean() {
-
-        double meanClass = 0.0; // receive and save grades of a student
-        System.out.println("Médias da Turma" + name + "(" + year + "/" + semester + "):");
-
-        for (Student student : students) {
-            double[] gradeStudent = new double[assessments.length]; // list of grade of a student
-            System.out.print(student.toString() + ": ");
-
-            for (int e = 0; e < assessments.length; e++) {
-                gradeStudent[e] = assessments[e].grade(student.getRegistration());
-                System.out.print(gradeStudent[e] + " ");
-            }
-
-            double sumGrade = sumGrade(gradeStudent);
-            System.out.println("= " + sumGrade);
-            meanClass += sumGrade;
-        }
-        System.out.printf("Média da turma: %.1f", meanClass/students.length);
-    }*/
 }

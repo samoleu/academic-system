@@ -7,11 +7,6 @@ public class StudentExam {
         this.grade = grade;
     }
 
-
-    public String getRegistration() {
-        return student.getRegistration();
-    }
-
     public double totalGrade() {
         double totGrade;
         int i;

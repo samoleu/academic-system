@@ -12,14 +12,4 @@ public class Exam extends Assessment {
         return grades[index].totalGrade();
     }
 
-    public double grade(String registerStudent) {
-        for (StudentExam grade : grades) {
-            if (grade.getRegistration().equals(registerStudent)) {
-                return grade.totalGrade();
-
-            }
-        }
-        System.out.println("Aluno não encontrado!");
-        return 0.0;
-    }
 }

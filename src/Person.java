@@ -7,10 +7,6 @@ public class Person {
         this.personId = personId;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public String toString() {
         return this.name + "(CPF:" + this.personId + ")";
     }

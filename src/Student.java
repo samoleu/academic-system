@@ -7,10 +7,6 @@ public class Student extends Person{
         this.registration = registration;
     }
 
-    public String getRegistration() {
-        return registration;
-    }
-
     @Override
     public String toString() {
         return this.name + "(Matrícula:" + this.registration + ")";
