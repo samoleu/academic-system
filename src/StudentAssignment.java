@@ -12,17 +12,17 @@ public class StudentAssignment {
     }
 
     public double getGrade() {
-        return grade;
+        return this.grade;
     }
 
     public double totalGrade(Date deadline, int expectedTime, double maximumGrade) {
-        if (deliveryTime.posterior(deadline)) {
-            grade = grade * 0.8;
-            return grade;
+        if (this.deliveryTime.posterior(deadline)) {
+            this.grade = this.grade * 0.8;
+            return this.grade;
         } else {
-            if (grade == maximumGrade && runTime <= expectedTime) {
-                grade += 2;
-                return grade;
+            if (this.grade == maximumGrade && this.runTime <= expectedTime) {
+                this.grade += 2;
+                return this.grade;
             }
         }
         return grade;

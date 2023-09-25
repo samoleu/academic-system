@@ -9,8 +9,10 @@ public class Assignment extends Assessment{
     }
 
     public double grade(int index) {
-        return grades[index].getGrade();
-    }
 
+        Date deadline = getDateAplication();
+
+        return grades[index].totalGrade(deadline, this.expectedTime , maximumGrade);
+    }
 
 }
